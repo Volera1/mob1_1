@@ -1,6 +1,6 @@
 import java.util.*
 
-fun main(args: Array<String>) {
+fun main() {
     println("Введите предложение:")
     val scan = Scanner(System.`in`)
     val line = scan.nextLine()
@@ -16,5 +16,5 @@ fun stringChange(line:String):String {
             result += word.reversed()
         }
     }
-    return(result.toString())
+    return(result.joinToString(" "))
 }
